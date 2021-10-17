@@ -1,38 +1,79 @@
-.App {
-  text-align: center;
-}
+body{
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(
+    90deg,
+    rgb(116, 135, 231) 0%,
+    rgb(231, 87, 74) 100%
+);}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container{
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
   }
-  to {
-    transform: rotate(360deg);
+
+form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(162, 158, 158);
+  padding: 20px;
+  width: 80%;
+  border-radius: 5px;
+  border: 3px solid rgb(25, 42, 233);
+  }
+
+input, button{
+  width: 90%;
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-bottom: rgb(233, 164, 164);
+  border-radius: 5px;
+  margin-top: 30px;
+  display: block;
+}
+
+button{
+  width: 80px;
+  cursor: pointer;
+}
+
+.studentsList div{
+  width: 100%;
+  background-color: rgb(196, 188, 187);
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: 3px solid rgb(70, 67, 160);
+}
+
+div h3, div h1 {
+  text-align: center;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+@media only screen and (min-width: 900px){
+  form {
+    width: 30%
+  }
+}
+
+@media (min-width: 500px) and (max-width: 900px){
+  form {
+    width: 60%
   }
 }
